@@ -1,0 +1,56 @@
+{
+  "uid" : "48a36619bb963a18",
+  "name" : "testApp",
+  "fullName" : "org.example.AppTest.testApp",
+  "historyId" : "a05de0346c5bb6cf0446d129881cc05f",
+  "time" : {
+    "start" : 1674298570939,
+    "stop" : 1674298570944,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.example"
+  }, {
+    "name" : "testClass",
+    "value" : "org.example.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testApp"
+  }, {
+    "name" : "suite",
+    "value" : "org.example.AppTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-user.local"
+  }, {
+    "name" : "thread",
+    "value" : "2169@MacBook-Air-user.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "48a36619bb963a18.json",
+  "parameterValues" : [ ]
+}

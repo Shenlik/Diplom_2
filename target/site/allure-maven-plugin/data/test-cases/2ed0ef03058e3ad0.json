@@ -1,0 +1,56 @@
+{
+  "uid" : "2ed0ef03058e3ad0",
+  "name" : "shouldBadRequestWithIncorrectHash",
+  "fullName" : "org.example.CreateOrderTest.shouldBadRequestWithIncorrectHash",
+  "historyId" : "609746c58f9f21e0baf24c1e24a940f4",
+  "time" : {
+    "start" : 1674300576078,
+    "stop" : 1674300576396,
+    "duration" : 318
+  },
+  "description" : "Тест проверяет создание заказа с неверным хешем ингредиентов",
+  "descriptionHtml" : "<p>Тест проверяет создание заказа с неверным хешем ингредиентов</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.example"
+  }, {
+    "name" : "testClass",
+    "value" : "org.example.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldBadRequestWithIncorrectHash"
+  }, {
+    "name" : "suite",
+    "value" : "org.example.CreateOrderTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-user.local"
+  }, {
+    "name" : "thread",
+    "value" : "3875@MacBook-Air-user.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ed0ef03058e3ad0.json",
+  "parameterValues" : [ ]
+}

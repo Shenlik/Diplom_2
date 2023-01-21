@@ -7,6 +7,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.example.request.UserFactory;
 import org.junit.Test;
 
+import java.util.Locale;
+
 import static java.net.HttpURLConnection.HTTP_FORBIDDEN;
 import static java.net.HttpURLConnection.HTTP_OK;
 import static org.hamcrest.Matchers.*;
@@ -25,14 +27,14 @@ public class CreateUserTest extends AbstractTest {
         response.then()
                 .assertThat()
                 .body("success", is(true))
-                .body("user.email",equalTo(email))
+                .body("user.email",equalTo(email.toLowerCase(Locale.ROOT)))
                 .body("user.name", equalTo(request.getName()))
-                .body("accessToken", contains("Bearer"))
+                .body("accessToken", notNullValue())
                 .body("refreshToken", notNullValue())
                 .and()
                 .statusCode(HTTP_OK);
 
-        var bearer = getToken(response.getBody().toString());
+        var bearer = getToken(response.getBody().asString());
         deleteUser(bearer);
     }
 

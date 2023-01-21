@@ -1,0 +1,974 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Air-user.local",
+    "children" : [ {
+      "name" : "2169@MacBook-Air-user.local.main(1)",
+      "children" : [ {
+        "name" : "should403WhenCreateWithoutPassword",
+        "uid" : "8f2224ac5f5f147f",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "failed",
+        "time" : {
+          "start" : 1674298582485,
+          "stop" : 1674298582772,
+          "duration" : 287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
+        "uid" : "32684d14a0c8b56e",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298573963,
+          "stop" : 1674298574971,
+          "duration" : 1008
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestCreateOrder",
+        "uid" : "b810e2cbfc9065bc",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298579976,
+          "stop" : 1674298580287,
+          "duration" : 311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testApp",
+        "uid" : "48a36619bb963a18",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298570939,
+          "stop" : 1674298570944,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeEmail",
+        "uid" : "1467a3cbe81bb6a6",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298569847,
+          "stop" : 1674298570915,
+          "duration" : 1068
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeName",
+        "uid" : "9729893ebfc78c1f",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298548176,
+          "stop" : 1674298554426,
+          "duration" : 6250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeEmail",
+        "uid" : "5ab23bf2d75fa11b",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298560928,
+          "stop" : 1674298562134,
+          "duration" : 1206
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongPassword",
+        "uid" : "71e8971ec9bf1fdb",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298572410,
+          "stop" : 1674298572829,
+          "duration" : 419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyLogin",
+        "uid" : "4d6213bfdd941e4a",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "failed",
+        "time" : {
+          "start" : 1674298571387,
+          "stop" : 1674298572404,
+          "duration" : 1017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestWithIncorrectHash",
+        "uid" : "4eddfd557c3400df",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298581121,
+          "stop" : 1674298581443,
+          "duration" : 322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenRegisterWithExistingMail",
+        "uid" : "3c061dd7d34690cc",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298582776,
+          "stop" : 1674298583418,
+          "duration" : 642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeName",
+        "uid" : "caa1861b369f2860",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298562137,
+          "stop" : 1674298563262,
+          "duration" : 1125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangePassword",
+        "uid" : "271a553bce47e863",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298563267,
+          "stop" : 1674298564839,
+          "duration" : 1572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrder",
+        "uid" : "acc51488b072eb74",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298580290,
+          "stop" : 1674298581118,
+          "duration" : 828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutName",
+        "uid" : "608504b7843f1fed",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298581799,
+          "stop" : 1674298582107,
+          "duration" : 308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangePassword",
+        "uid" : "ff53cf4ac2cfebbc",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298559591,
+          "stop" : 1674298560920,
+          "duration" : 1329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateUser",
+        "uid" : "3d43c6f3bfbfe594",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "failed",
+        "time" : {
+          "start" : 1674298582110,
+          "stop" : 1674298582476,
+          "duration" : 366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutEmail",
+        "uid" : "bc0e7af7b186a473",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298583424,
+          "stop" : 1674298583718,
+          "duration" : 294
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongEmail",
+        "uid" : "6ccb9d5eb46afe1",
+        "parentUid" : "ef29a873e1feead939dc78e655123055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674298572832,
+          "stop" : 1674298573145,
+          "duration" : 313
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ef29a873e1feead939dc78e655123055"
+    }, {
+      "name" : "4239@MacBook-Air-user.local.main(1)",
+      "children" : [ {
+        "name" : "should403WhenCreateWithoutPassword",
+        "uid" : "30c1cf2f4246280e",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300939473,
+          "stop" : 1674300939773,
+          "duration" : 300
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenRegisterWithExistingMail",
+        "uid" : "c3345e87182504b5",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300939781,
+          "stop" : 1674300940537,
+          "duration" : 756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestCreateOrder",
+        "uid" : "baaf502978d4f1a1",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300931487,
+          "stop" : 1674300931809,
+          "duration" : 322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangePassword",
+        "uid" : "bed6c17e42e1debf",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300920700,
+          "stop" : 1674300922156,
+          "duration" : 1456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeName",
+        "uid" : "bfcd9e288c7a68ad",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300919580,
+          "stop" : 1674300920697,
+          "duration" : 1117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrder",
+        "uid" : "9a6c8a3c821bce18",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300931815,
+          "stop" : 1674300932604,
+          "duration" : 789
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongPassword",
+        "uid" : "fa3e4acc63137879",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300929165,
+          "stop" : 1674300929550,
+          "duration" : 385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateUser",
+        "uid" : "8d52c06ab8ac867a",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300938637,
+          "stop" : 1674300939469,
+          "duration" : 832
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestWithIncorrectHash",
+        "uid" : "2b6a0733cb885aa3",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300937610,
+          "stop" : 1674300937939,
+          "duration" : 329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
+        "uid" : "f00ffa1ba6ee63a0",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300930839,
+          "stop" : 1674300931484,
+          "duration" : 645
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutName",
+        "uid" : "f3d60b58a7d954b3",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300938301,
+          "stop" : 1674300938634,
+          "duration" : 333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutEmail",
+        "uid" : "8baf223a08d4c3c0",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300940539,
+          "stop" : 1674300940850,
+          "duration" : 311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyLogin",
+        "uid" : "9ac9363d7ff2c00e",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300928609,
+          "stop" : 1674300929163,
+          "duration" : 554
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeEmail",
+        "uid" : "81c895eece181d57",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300918403,
+          "stop" : 1674300919576,
+          "duration" : 1173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeEmail",
+        "uid" : "7483b3d12859ea39",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300927165,
+          "stop" : 1674300928263,
+          "duration" : 1098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongEmail",
+        "uid" : "6af936264dbfb0c6",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300929552,
+          "stop" : 1674300929912,
+          "duration" : 360
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeName",
+        "uid" : "3c06b36918c235d1",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300905298,
+          "stop" : 1674300911965,
+          "duration" : 6667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangePassword",
+        "uid" : "ccfeb2d86a218adb",
+        "parentUid" : "bff8fe5742479b8110575a0ac1895b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300917131,
+          "stop" : 1674300918399,
+          "duration" : 1268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bff8fe5742479b8110575a0ac1895b4c"
+    }, {
+      "name" : "4112@MacBook-Air-user.local.main(1)",
+      "children" : [ {
+        "name" : "shouldUnauthorizedOnChangeEmail",
+        "uid" : "c095c4994dfe984f",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300807511,
+          "stop" : 1674300808627,
+          "duration" : 1116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongPassword",
+        "uid" : "1d6337d6bb6254a6",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300818316,
+          "stop" : 1674300818709,
+          "duration" : 393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongEmail",
+        "uid" : "9ee1c572b8c97eb3",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300818711,
+          "stop" : 1674300819039,
+          "duration" : 328
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutName",
+        "uid" : "a68b1d4fade13ad6",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300827378,
+          "stop" : 1674300827723,
+          "duration" : 345
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestCreateOrder",
+        "uid" : "6e495dcc865032b",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300820679,
+          "stop" : 1674300820980,
+          "duration" : 301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeName",
+        "uid" : "fef80e600728d371",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300808631,
+          "stop" : 1674300809777,
+          "duration" : 1146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyLogin",
+        "uid" : "63959bc1cf98287e",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300817745,
+          "stop" : 1674300818312,
+          "duration" : 567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeName",
+        "uid" : "250a72002a7ee108",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300794747,
+          "stop" : 1674300801158,
+          "duration" : 6411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenRegisterWithExistingMail",
+        "uid" : "4dfaf9f0e6293247",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300828527,
+          "stop" : 1674300829192,
+          "duration" : 665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeEmail",
+        "uid" : "dc4206083232b27f",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300816310,
+          "stop" : 1674300817362,
+          "duration" : 1052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangePassword",
+        "uid" : "739bd077c1a6b3cc",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300806290,
+          "stop" : 1674300807507,
+          "duration" : 1217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
+        "uid" : "9841cf3163fde973",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300819743,
+          "stop" : 1674300820676,
+          "duration" : 933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateUser",
+        "uid" : "2bfd95fbf4080537",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "broken",
+        "time" : {
+          "start" : 1674300827726,
+          "stop" : 1674300828180,
+          "duration" : 454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangePassword",
+        "uid" : "1a9afd5a06aba18f",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300809781,
+          "stop" : 1674300811300,
+          "duration" : 1519
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrder",
+        "uid" : "6ed90505dc34b832",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300820984,
+          "stop" : 1674300821678,
+          "duration" : 694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutPassword",
+        "uid" : "bab4bfd5ba6b2e2a",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300828186,
+          "stop" : 1674300828518,
+          "duration" : 332
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutEmail",
+        "uid" : "334c3ca72194dd80",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300829194,
+          "stop" : 1674300829496,
+          "duration" : 302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestWithIncorrectHash",
+        "uid" : "c40357d70b2bffea",
+        "parentUid" : "bcbf40a3b3d04f3533d04467bbf25652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300826683,
+          "stop" : 1674300827018,
+          "duration" : 335
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bcbf40a3b3d04f3533d04467bbf25652"
+    }, {
+      "name" : "3875@MacBook-Air-user.local.main(1)",
+      "children" : [ {
+        "name" : "should403WhenRegisterWithExistingMail",
+        "uid" : "a38f8bc3f6f4b0e3",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300577892,
+          "stop" : 1674300578739,
+          "duration" : 847
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyLogin",
+        "uid" : "e643d5aab1f591f",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300567248,
+          "stop" : 1674300567700,
+          "duration" : 452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangePassword",
+        "uid" : "68d85f1d752f25ec",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300559281,
+          "stop" : 1674300560793,
+          "duration" : 1512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutName",
+        "uid" : "e5aa5ede1425fd99",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300576778,
+          "stop" : 1674300577088,
+          "duration" : 310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeEmail",
+        "uid" : "ca0c80a24bc12719",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300556910,
+          "stop" : 1674300558120,
+          "duration" : 1210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateUser",
+        "uid" : "e2d95d3e9878e683",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1674300577090,
+          "stop" : 1674300577573,
+          "duration" : 483
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestWithIncorrectHash",
+        "uid" : "2ed0ef03058e3ad0",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300576078,
+          "stop" : 1674300576396,
+          "duration" : 318
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
+        "uid" : "b43b98a1474fa0f0",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300569295,
+          "stop" : 1674300570063,
+          "duration" : 768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutPassword",
+        "uid" : "a7ebe3aa4e63c177",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300577578,
+          "stop" : 1674300577882,
+          "duration" : 304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyCreateOrder",
+        "uid" : "c8d272608795d13f",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300570378,
+          "stop" : 1674300571072,
+          "duration" : 694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangeName",
+        "uid" : "3f8dbc6413370b05",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300558131,
+          "stop" : 1674300559279,
+          "duration" : 1148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeName",
+        "uid" : "a63dfe0e0a745886",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300543826,
+          "stop" : 1674300550632,
+          "duration" : 6806
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldSuccessfullyChangeEmail",
+        "uid" : "4f3a9bf0e3edb67d",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300565798,
+          "stop" : 1674300566868,
+          "duration" : 1070
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongEmail",
+        "uid" : "7f43ab948362b178",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300568140,
+          "stop" : 1674300568472,
+          "duration" : 332
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldBadRequestCreateOrder",
+        "uid" : "fab1cb8952a1d410",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300570065,
+          "stop" : 1674300570376,
+          "duration" : 311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldNotFoundWrongPassword",
+        "uid" : "d7e9551d229b5b06",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300567702,
+          "stop" : 1674300568136,
+          "duration" : 434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should403WhenCreateWithoutEmail",
+        "uid" : "36aae2bc40546955",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300578743,
+          "stop" : 1674300579089,
+          "duration" : 346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldUnauthorizedOnChangePassword",
+        "uid" : "3e574483e1607046",
+        "parentUid" : "d6d009aa1180ac652adeb5ddd60de69b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674300555776,
+          "stop" : 1674300556902,
+          "duration" : 1126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6d009aa1180ac652adeb5ddd60de69b"
+    } ],
+    "uid" : "c4cc3c36e87ec6482514404fbdf8b8dc"
+  } ]
+}

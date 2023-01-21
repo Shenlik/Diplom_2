@@ -1,2 +1,6 @@
 .idea
-target
+.allure
+target/*
+!target/allure-results
+!target/site
+!target/surefire-reports

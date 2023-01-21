@@ -1,0 +1,56 @@
+{
+  "uid" : "dc4206083232b27f",
+  "name" : "shouldSuccessfullyChangeEmail",
+  "fullName" : "org.example.ChangeDataTest.shouldSuccessfullyChangeEmail",
+  "historyId" : "1b5951cd1816d4b05090f08cdc0e2263",
+  "time" : {
+    "start" : 1674300816310,
+    "stop" : 1674300817362,
+    "duration" : 1052
+  },
+  "description" : "Тест проверяет изменение email пользователя с авторизацией",
+  "descriptionHtml" : "<p>Тест проверяет изменение email пользователя с авторизацией</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.example"
+  }, {
+    "name" : "testClass",
+    "value" : "org.example.ChangeDataTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldSuccessfullyChangeEmail"
+  }, {
+    "name" : "suite",
+    "value" : "org.example.ChangeDataTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-user.local"
+  }, {
+    "name" : "thread",
+    "value" : "4112@MacBook-Air-user.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc4206083232b27f.json",
+  "parameterValues" : [ ]
+}

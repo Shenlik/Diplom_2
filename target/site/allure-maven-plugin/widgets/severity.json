@@ -1,0 +1,191 @@
+[ {
+  "uid" : "bfcd9e288c7a68ad",
+  "name" : "shouldUnauthorizedOnChangeName",
+  "time" : {
+    "start" : 1674300919580,
+    "stop" : 1674300920697,
+    "duration" : 1117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7483b3d12859ea39",
+  "name" : "shouldSuccessfullyChangeEmail",
+  "time" : {
+    "start" : 1674300927165,
+    "stop" : 1674300928263,
+    "duration" : 1098
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ac9363d7ff2c00e",
+  "name" : "shouldSuccessfullyLogin",
+  "time" : {
+    "start" : 1674300928609,
+    "stop" : 1674300929163,
+    "duration" : 554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a6c8a3c821bce18",
+  "name" : "shouldSuccessfullyCreateOrder",
+  "time" : {
+    "start" : 1674300931815,
+    "stop" : 1674300932604,
+    "duration" : 789
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccfeb2d86a218adb",
+  "name" : "shouldUnauthorizedOnChangePassword",
+  "time" : {
+    "start" : 1674300917131,
+    "stop" : 1674300918399,
+    "duration" : 1268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8baf223a08d4c3c0",
+  "name" : "should403WhenCreateWithoutEmail",
+  "time" : {
+    "start" : 1674300940539,
+    "stop" : 1674300940850,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "baaf502978d4f1a1",
+  "name" : "shouldBadRequestCreateOrder",
+  "time" : {
+    "start" : 1674300931487,
+    "stop" : 1674300931809,
+    "duration" : 322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bed6c17e42e1debf",
+  "name" : "shouldSuccessfullyChangePassword",
+  "time" : {
+    "start" : 1674300920700,
+    "stop" : 1674300922156,
+    "duration" : 1456
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6af936264dbfb0c6",
+  "name" : "shouldNotFoundWrongEmail",
+  "time" : {
+    "start" : 1674300929552,
+    "stop" : 1674300929912,
+    "duration" : 360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3345e87182504b5",
+  "name" : "should403WhenRegisterWithExistingMail",
+  "time" : {
+    "start" : 1674300939781,
+    "stop" : 1674300940537,
+    "duration" : 756
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d52c06ab8ac867a",
+  "name" : "shouldSuccessfullyCreateUser",
+  "time" : {
+    "start" : 1674300938637,
+    "stop" : 1674300939469,
+    "duration" : 832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b6a0733cb885aa3",
+  "name" : "shouldBadRequestWithIncorrectHash",
+  "time" : {
+    "start" : 1674300937610,
+    "stop" : 1674300937939,
+    "duration" : 329
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30c1cf2f4246280e",
+  "name" : "should403WhenCreateWithoutPassword",
+  "time" : {
+    "start" : 1674300939473,
+    "stop" : 1674300939773,
+    "duration" : 300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c06b36918c235d1",
+  "name" : "shouldSuccessfullyChangeName",
+  "time" : {
+    "start" : 1674300905298,
+    "stop" : 1674300911965,
+    "duration" : 6667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f00ffa1ba6ee63a0",
+  "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
+  "time" : {
+    "start" : 1674300930839,
+    "stop" : 1674300931484,
+    "duration" : 645
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3d60b58a7d954b3",
+  "name" : "should403WhenCreateWithoutName",
+  "time" : {
+    "start" : 1674300938301,
+    "stop" : 1674300938634,
+    "duration" : 333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa3e4acc63137879",
+  "name" : "shouldNotFoundWrongPassword",
+  "time" : {
+    "start" : 1674300929165,
+    "stop" : 1674300929550,
+    "duration" : 385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81c895eece181d57",
+  "name" : "shouldUnauthorizedOnChangeEmail",
+  "time" : {
+    "start" : 1674300918403,
+    "stop" : 1674300919576,
+    "duration" : 1173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48a36619bb963a18",
+  "name" : "testApp",
+  "time" : {
+    "start" : 1674298570939,
+    "stop" : 1674298570944,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

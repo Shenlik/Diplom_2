@@ -1,0 +1,82 @@
+{
+  "uid" : "9a6c8a3c821bce18",
+  "name" : "shouldSuccessfullyCreateOrder",
+  "fullName" : "org.example.CreateOrderTest.shouldSuccessfullyCreateOrder",
+  "historyId" : "7ece9fd9e4d726a8e4316a5c61345627",
+  "time" : {
+    "start" : 1674300931815,
+    "stop" : 1674300932604,
+    "duration" : 789
+  },
+  "description" : "Тест проверяет создание заказа с авторизацией",
+  "descriptionHtml" : "<p>Тест проверяет создание заказа с авторизацией</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.example"
+  }, {
+    "name" : "testClass",
+    "value" : "org.example.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldSuccessfullyCreateOrder"
+  }, {
+    "name" : "suite",
+    "value" : "org.example.CreateOrderTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-user.local"
+  }, {
+    "name" : "thread",
+    "value" : "4239@MacBook-Air-user.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6ed90505dc34b832",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674300820984,
+        "stop" : 1674300821678,
+        "duration" : 694
+      }
+    }, {
+      "uid" : "c8d272608795d13f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674300570378,
+        "stop" : 1674300571072,
+        "duration" : 694
+      }
+    }, {
+      "uid" : "acc51488b072eb74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674298580290,
+        "stop" : 1674298581118,
+        "duration" : 828
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a6c8a3c821bce18.json",
+  "parameterValues" : [ ]
+}
