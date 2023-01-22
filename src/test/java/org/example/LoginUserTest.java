@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.example.api.UserClient;
 import org.example.request.UserFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -18,6 +19,9 @@ import static org.hamcrest.Matchers.*;
 
 public class LoginUserTest extends AbstractTest {
 
+    private static final File loginUserWrongEmail = new File("src/test/resources/loginUser/loginUserWrongEmail.json");
+    private static final File loginUserWrongPassword = new File("src/test/resources/loginUser/loginUserWrongPassword.json");
+
     private static String email;
     private static String password;
     private static String token;
@@ -29,20 +33,20 @@ public class LoginUserTest extends AbstractTest {
         var request = UserFactory.createUserRequest(email);
         password = request.getPassword();
 
-        var response = createUser(request);
-        token = getToken(response.getBody().asString());
+        var response = UserClient.createUser(request);
+        token = UserClient.getToken(response.getBody().asString());
     }
 
     @AfterClass
     public static void cleanupUser() {
-        deleteUser(token);
+        UserClient.deleteUser(token);
     }
 
     @Test
     @Description(value = "Тест проверяет логин пользователя")
     public void shouldSuccessfullyLogin() throws JsonProcessingException {
 
-        Response response = loginUser(email, password);
+        Response response = UserClient.loginUser(email, password);
 
         response.then()
                 .assertThat()
@@ -59,10 +63,7 @@ public class LoginUserTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет неправильно указанный email пользователя")
     public void shouldNotFoundWrongEmail() {
-
-        File json = new File("src/test/resources/loginUser/loginUserWrongEmail.json");
-
-        Response response = loginUser(json);
+        Response response = UserClient.loginUser(loginUserWrongEmail);
 
         response.then()
                 .assertThat()
@@ -75,10 +76,7 @@ public class LoginUserTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет неправильно указанный  password пользователя")
     public void shouldNotFoundWrongPassword() {
-
-        File json = new File("src/test/resources/loginUser/loginUserWrongPassword.json");
-
-        Response response = loginUser(json);
+        Response response = UserClient.loginUser(loginUserWrongPassword);
 
         response.then()
                 .assertThat()

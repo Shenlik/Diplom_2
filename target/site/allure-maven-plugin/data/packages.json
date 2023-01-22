@@ -5,7 +5,7 @@
     "name" : "org.example",
     "children" : [ {
       "name" : "testApp",
-      "uid" : "48a36619bb963a18",
+      "uid" : "57767b5b6ed70f7f",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -18,7 +18,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyChangeName",
-      "uid" : "3c06b36918c235d1",
+      "uid" : "e93d3f5289f1d2af",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -31,7 +31,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldUnauthorizedOnChangePassword",
-      "uid" : "ccfeb2d86a218adb",
+      "uid" : "3a54018406678034",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -44,7 +44,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldUnauthorizedOnChangeEmail",
-      "uid" : "81c895eece181d57",
+      "uid" : "1a9ed5dbcb428ee5",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -57,7 +57,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldUnauthorizedOnChangeName",
-      "uid" : "bfcd9e288c7a68ad",
+      "uid" : "abb79e893fa53bbd",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -70,7 +70,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyChangePassword",
-      "uid" : "bed6c17e42e1debf",
+      "uid" : "e2d2744a032540f9",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -83,7 +83,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyChangeEmail",
-      "uid" : "7483b3d12859ea39",
+      "uid" : "f055addf7192f090",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -96,7 +96,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyLogin",
-      "uid" : "9ac9363d7ff2c00e",
+      "uid" : "66a3711108c5f0ef",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -109,7 +109,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldNotFoundWrongPassword",
-      "uid" : "fa3e4acc63137879",
+      "uid" : "2e0293585508e32d",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -122,7 +122,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldNotFoundWrongEmail",
-      "uid" : "6af936264dbfb0c6",
+      "uid" : "2487fd2daf5b1ab9",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -135,7 +135,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyCreateOrderWithoutLogin",
-      "uid" : "f00ffa1ba6ee63a0",
+      "uid" : "79dbc2f22e92c575",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -148,7 +148,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldBadRequestCreateOrder",
-      "uid" : "baaf502978d4f1a1",
+      "uid" : "4c7a2f059cec4960",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -161,7 +161,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyCreateOrder",
-      "uid" : "9a6c8a3c821bce18",
+      "uid" : "2fd67b52fe3424dd",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -174,7 +174,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldBadRequestWithIncorrectHash",
-      "uid" : "2b6a0733cb885aa3",
+      "uid" : "275768075f26ba5",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -187,7 +187,7 @@
       "parameters" : [ ]
     }, {
       "name" : "should403WhenCreateWithoutName",
-      "uid" : "f3d60b58a7d954b3",
+      "uid" : "9f7dcb817338b710",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -200,7 +200,7 @@
       "parameters" : [ ]
     }, {
       "name" : "shouldSuccessfullyCreateUser",
-      "uid" : "8d52c06ab8ac867a",
+      "uid" : "cbb766f485f03ac8",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -213,7 +213,7 @@
       "parameters" : [ ]
     }, {
       "name" : "should403WhenCreateWithoutPassword",
-      "uid" : "30c1cf2f4246280e",
+      "uid" : "611cb0edb6c69a58",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -226,7 +226,7 @@
       "parameters" : [ ]
     }, {
       "name" : "should403WhenRegisterWithExistingMail",
-      "uid" : "c3345e87182504b5",
+      "uid" : "48b3d1080f7d7e37",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {
@@ -239,7 +239,7 @@
       "parameters" : [ ]
     }, {
       "name" : "should403WhenCreateWithoutEmail",
-      "uid" : "8baf223a08d4c3c0",
+      "uid" : "ab279c4c38817731",
       "parentUid" : "135bac64e72a6ce5347105d4ba2d38d7",
       "status" : "passed",
       "time" : {

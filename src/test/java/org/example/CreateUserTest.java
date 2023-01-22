@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.example.api.UserClient;
 import org.example.request.UserFactory;
 import org.junit.Test;
 
@@ -22,7 +23,7 @@ public class CreateUserTest extends AbstractTest {
         var email = RandomStringUtils.randomAlphabetic(6) + "@mailto.plus";
         var request = UserFactory.createUserRequest(email);
 
-        var response = createUser(request);
+        var response = UserClient.createUser(request);
 
         response.then()
                 .assertThat()
@@ -34,8 +35,8 @@ public class CreateUserTest extends AbstractTest {
                 .and()
                 .statusCode(HTTP_OK);
 
-        var bearer = getToken(response.getBody().asString());
-        deleteUser(bearer);
+        var bearer = UserClient.getToken(response.getBody().asString());
+        UserClient.deleteUser(bearer);
     }
 
 
@@ -46,8 +47,8 @@ public class CreateUserTest extends AbstractTest {
         var email = RandomStringUtils.randomAlphabetic(6) + "@mailto.plus";
         var request = UserFactory.createUserRequest(email);
 
-        createUser(request);
-        var response = createUser(request);
+        UserClient.createUser(request);
+        var response = UserClient.createUser(request);
 
         response.then()
                 .assertThat()
@@ -55,6 +56,11 @@ public class CreateUserTest extends AbstractTest {
                 .body("message",equalTo("User already exists"))
                 .and()
                 .statusCode(HTTP_FORBIDDEN);
+
+        var bearer = UserClient.getToken(response.getBody().asString());
+        if(bearer != null) {
+            UserClient.deleteUser(bearer);
+        }
     }
 
     @Test
@@ -62,14 +68,19 @@ public class CreateUserTest extends AbstractTest {
     public void should403WhenCreateWithoutEmail() throws JsonProcessingException {
         var request = UserFactory.createWithoutEmailRequest();
 
-        Response response = createUser(request);
+        Response response = UserClient.createUser(request);
 
         response.then()
                 .assertThat()
                 .body("success", is(false))
-                .body("message",equalTo("Email, password and name are required fields"))
+                .body("message", equalTo("Email, password and name are required fields"))
                 .and()
                 .statusCode(HTTP_FORBIDDEN);
+
+        var bearer = UserClient.getToken(response.getBody().asString());
+        if (bearer != null) {
+            UserClient.deleteUser(bearer);
+        }
     }
 
     @Test
@@ -77,14 +88,19 @@ public class CreateUserTest extends AbstractTest {
     public void should403WhenCreateWithoutPassword() throws JsonProcessingException {
         var request = UserFactory.createWithoutPasswordRequest();
 
-        Response response = createUser(request);
+        Response response = UserClient.createUser(request);
 
         response.then()
                 .assertThat()
                 .body("success", is(false))
-                .body("message",equalTo("Email, password and name are required fields"))
+                .body("message", equalTo("Email, password and name are required fields"))
                 .and()
                 .statusCode(HTTP_FORBIDDEN);
+
+        var bearer = UserClient.getToken(response.getBody().asString());
+        if (bearer != null) {
+            UserClient.deleteUser(bearer);
+        }
     }
 
     @Test
@@ -92,7 +108,7 @@ public class CreateUserTest extends AbstractTest {
     public void should403WhenCreateWithoutName() throws JsonProcessingException {
         var request = UserFactory.createWithoutNameRequest();
 
-        Response response = createUser(request);
+        Response response = UserClient.createUser(request);
 
         response.then()
                 .assertThat()
@@ -100,5 +116,10 @@ public class CreateUserTest extends AbstractTest {
                 .body("message",equalTo("Email, password and name are required fields"))
                 .and()
                 .statusCode(HTTP_FORBIDDEN);
+
+        var bearer = UserClient.getToken(response.getBody().asString());
+        if(bearer != null) {
+            UserClient.deleteUser(bearer);
+        }
     }
 }

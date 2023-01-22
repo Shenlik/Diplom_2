@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.example.api.UserClient;
 import org.example.request.UserFactory;
 import org.junit.After;
 import org.junit.Before;
@@ -19,31 +20,31 @@ import static org.hamcrest.Matchers.is;
 
 public class ChangeDataTest extends AbstractTest {
 
+    private static final File changeName = new File("src/test/resources/changeUser/ChangeName.json");
+    private static final File changePassword = new File("src/test/resources/changeUser/ChangePassword.json");
+    private static final File changeEmail = new File("src/test/resources/changeUser/ChangeEmail.json");
     private static String email;
     private static String token;
 
     @Before
-    public  void shouldSuccessfullyCreateUserForChange() throws JsonProcessingException {
+    public void shouldSuccessfullyCreateUserForChange() throws JsonProcessingException {
         setUp();
         email = RandomStringUtils.randomAlphabetic(6) + "@mailto.plus";
         var request = UserFactory.createUserRequest(email);
 
-        var response = createUser(request);
-        token = getToken(response.getBody().asString());
+        var response = UserClient.createUser(request);
+        token = UserClient.getToken(response.getBody().asString());
     }
 
     @After
-    public  void cleanupUser() {
-        deleteUser(token);
+    public void cleanupUser() {
+        UserClient.deleteUser(token);
     }
 
     @Test
     @Description(value = "Тест проверяет изменение email пользователя с авторизацией")
     public void shouldSuccessfullyChangeEmail() {
-
-        File json = new File("src/test/resources/changeUser/ChangeEmail.json");
-
-        Response response = changeData(json, token);
+        Response response = UserClient.changeData(changeEmail, token);
 
         response.then()
                 .assertThat()
@@ -54,13 +55,11 @@ public class ChangeDataTest extends AbstractTest {
                 .statusCode(HTTP_OK);
 
     }
-// proverit username
+
     @Test
     @Description(value = "Тест проверяет изменение password пользователя с авторизацией")
     public void shouldSuccessfullyChangePassword() throws JsonProcessingException {
-        File json = new File("src/test/resources/changeUser/changePassword.json");
-
-        Response response = changeData(json, token);
+        Response response = UserClient.changeData(changePassword, token);
 
         response.then()
                 .assertThat()
@@ -68,7 +67,7 @@ public class ChangeDataTest extends AbstractTest {
                 .and()
                 .statusCode(HTTP_OK);
 
-        loginUser(email, "password22")
+        UserClient.loginUser(email, "password22")
                 .then()
                 .statusCode(HTTP_OK);
     }
@@ -77,9 +76,7 @@ public class ChangeDataTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет изменение name пользователя с авторизацией")
     public void shouldSuccessfullyChangeName() {
-        File json = new File("src/test/resources/changeUser/changeName.json");
-
-        Response response = changeData(json, token);
+        Response response = UserClient.changeData(changeName, token);
 
         response.then()
                 .assertThat()
@@ -94,10 +91,7 @@ public class ChangeDataTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет изменение email пользователя без авторизации")
     public void shouldUnauthorizedOnChangeEmail() {
-
-        File json = new File("src/test/resources/changeUser/ChangeEmail.json");
-
-        Response response = changeData(json, null);
+        Response response = UserClient.changeData(changeEmail, null);
 
         response.then()
                 .assertThat()
@@ -110,9 +104,7 @@ public class ChangeDataTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет изменение password пользователя без авторизации")
     public void shouldUnauthorizedOnChangePassword() {
-        File json = new File("src/test/resources/changeUser/ChangePassword.json");
-
-        Response response = changeData(json, null);
+        Response response = UserClient.changeData(changePassword, null);
 
         response.then()
                 .assertThat()
@@ -125,9 +117,7 @@ public class ChangeDataTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет изменение name пользователя без авторизации")
     public void shouldUnauthorizedOnChangeName() {
-        File json = new File("src/test/resources/changeUser/ChangeName.json");
-
-        Response response = changeData(json, null);
+        Response response = UserClient.changeData(changeName, null);
 
         response.then()
                 .assertThat()

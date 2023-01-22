@@ -3,19 +3,20 @@ package org.example;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.qameta.allure.Description;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.example.api.OrderClient;
+import org.example.api.UserClient;
 import org.example.request.CreateOrderRequest;
 import org.example.request.UserFactory;
-import org.example.respons.IngredientsData;
-import org.example.respons.OrderResponse;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static java.net.HttpURLConnection.HTTP_BAD_REQUEST;
+import static org.example.api.URLs.ORDERS_URL;
+import static org.example.config.ObjectMapperConfig.OBJECT_MAPPER;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
@@ -31,23 +32,23 @@ public class CreateOrderTest extends AbstractTest {
         email = RandomStringUtils.randomAlphabetic(6) + "@mailto.plus";
         var request = UserFactory.createUserRequest(email);
 
-        var response = createUser(request);
-        token = getToken(response.getBody().asString());
+        var response = UserClient.createUser(request);
+        token = UserClient.getToken(response.getBody().asString());
     }
 
     @AfterClass
     public static void cleanupUser() {
-        deleteUser(token);
+        UserClient.deleteUser(token);
     }
 
     @Test
     @Description(value = "Тест проверяет создание заказа с авторизацией")
     public void shouldSuccessfullyCreateOrder() throws JsonProcessingException {
-        var ingredients = getIngredients(token);
+        var ingredients = OrderClient.getIngredients(token);
         var one = ingredients.getData().get(0);
         var two = ingredients.getData().get(1);
 
-        var order = createOrder(token, List.of(one.get_id(), two.get_id()));
+        var order = OrderClient.createOrder(token, List.of(one.get_id(), two.get_id()));
 
         assertTrue(order.isSuccess());
         assertEquals((long) one.getPrice() + two.getPrice(), (long) order.getOrder().getPrice());
@@ -57,7 +58,7 @@ public class CreateOrderTest extends AbstractTest {
     @Description(value = "Тест проверяет создание заказа с авторизацией без ингридентов")
     public void shouldBadRequestCreateOrder() throws JsonProcessingException {
         var request = new CreateOrderRequest(List.of());
-        var requestAsJson = objectMapper.writeValueAsString(request);
+        var requestAsJson = OBJECT_MAPPER.writeValueAsString(request);
 
         var response = given()
                 .header("Authorization", token)
@@ -65,7 +66,7 @@ public class CreateOrderTest extends AbstractTest {
                 .body(requestAsJson)
                 .and()
                 .when()
-                .post("/api/orders");
+                .post(ORDERS_URL);
 
         response.then()
                 .assertThat()
@@ -78,10 +79,10 @@ public class CreateOrderTest extends AbstractTest {
     @Test
     @Description(value = "Тест проверяет создание заказа неавторизованным пользователем")
     public void shouldSuccessfullyCreateOrderWithoutLogin() throws JsonProcessingException {
-        var ingredients = getIngredients(token);
+        var ingredients = OrderClient.getIngredients(token);
         var one = ingredients.getData().get(0);
 
-        var order = createOrder(null, List.of(one.get_id()));
+        var order = OrderClient.createOrder(null, List.of(one.get_id()));
 
         assertTrue(order.isSuccess());
         assertNotNull(order.getOrder().getNumber());
@@ -92,14 +93,14 @@ public class CreateOrderTest extends AbstractTest {
     public void shouldBadRequestWithIncorrectHash() throws JsonProcessingException {
         var incorrectId = "60d3b41abdacab0026a733c6";
         var request = new CreateOrderRequest(List.of(incorrectId));
-        var requestAsJson = objectMapper.writeValueAsString(request);
+        var requestAsJson = OBJECT_MAPPER.writeValueAsString(request);
 
         var response = given()
                 .header("Content-type", "application/json")
                 .body(requestAsJson)
                 .and()
                 .when()
-                .post("/api/orders");
+                .post(ORDERS_URL);
 
         response.then()
                 .assertThat()
@@ -110,37 +111,4 @@ public class CreateOrderTest extends AbstractTest {
     }
 
 
-    private static OrderResponse createOrder(@Nullable String token, List<String> ingredients) throws JsonProcessingException {
-        var request = new CreateOrderRequest(ingredients);
-        var requestAsJson = objectMapper.writeValueAsString(request);
-
-        var builder = given();
-        if (token != null) {
-            builder.header("Authorization", token);
-        }
-        var response = builder
-                .header("Content-type", "application/json")
-                .body(requestAsJson)
-                .and()
-                .when()
-                .post("/api/orders");
-
-
-        return objectMapper.readValue(response.getBody().asString(), OrderResponse.class);
-    }
-
-    private static IngredientsData getIngredients(@Nullable String token) throws JsonProcessingException {
-        var builder = given();
-        if (token != null) {
-            builder.header("Authorization", token);
-        }
-
-        var response = builder.header("Content-type", "application/json")
-                .and()
-                .when()
-                .get("/api/ingredients");
-
-
-        return objectMapper.readValue(response.getBody().asString(), IngredientsData.class);
-    }
 }
